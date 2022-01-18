@@ -4,6 +4,7 @@ var getUserRepos = function(user) {
 
     //make request to the url
     fetch(apiURL).then(function(response) {
+        console.log(response);
         response.json().then(function(data) {
             console.log(data);
         });
